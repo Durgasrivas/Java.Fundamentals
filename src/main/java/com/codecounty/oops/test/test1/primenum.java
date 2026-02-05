@@ -1,4 +1,4 @@
-package com.codecounty.oops.test;
+package com.codecounty.oops.test.test1;
 
 import java.util.Scanner;
 

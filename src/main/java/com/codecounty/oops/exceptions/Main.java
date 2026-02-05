@@ -1,5 +1,6 @@
 package com.codecounty.oops.exceptions;
 
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Main {
@@ -13,13 +14,24 @@ public class Main {
         try {
             int num = sc.nextInt();
             System.out.println(10 / arr[num]);
-        } catch (ArrayIndexOutOfBoundsException e) {
+//        } catch (ArrayIndexOutOfBoundsException e) {
+//            System.out.println("Exception Occurred");
+//            e.printStackTrace();
+//        } catch (ArithmeticException e) {
+//            System.out.println("Exception Occurred");
+//            e.printStackTrace();
+//        } catch (InputMismatchException e) {
+//            System.out.println("Exception Occurred");
+//            e.printStackTrace();
+//        } catch (Exception e) {//Always put the default Exception block at the end
+//            System.out.println("Exception Occurred");
+//            e.printStackTrace();
+//        }
+
+        } catch (ArrayIndexOutOfBoundsException | ArithmeticException | InputMismatchException e) {
             System.out.println("Exception Occurred");
             e.printStackTrace();
-        } catch (ArithmeticException e) {
-            System.out.println("Exception Occurred");
-            e.printStackTrace();
-        } catch (Exception e) { //Always put the default Exception block at the end
+        } catch (Exception e) {
             System.out.println("Exception Occurred");
             e.printStackTrace();
         }
