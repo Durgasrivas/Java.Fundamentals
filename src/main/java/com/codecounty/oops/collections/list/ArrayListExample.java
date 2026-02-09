@@ -68,8 +68,9 @@ public class ArrayListExample {
         System.out.println(listOfNums.getFirst());
         System.out.println(listOfNums.getLast());
 
-        List<Integer>list2=List.of(54,65,4,435);
+        List<Integer>list2=List.of(54,65,56,4,435);
 //        list2.add(5);
+
         listOfNums.addAll(list2);//TODO see how can truly merge two lists
         System.out.println(listOfNums);
 
