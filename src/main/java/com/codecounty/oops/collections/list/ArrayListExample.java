@@ -52,6 +52,7 @@ public class ArrayListExample {
         while (iterator.hasNext()) {
             System.out.println(iterator.next() + " ");
         }
+        System.out.println();
 //        TODO Research looping last to first in listOfNums
 
         listOfNums.removeLast();

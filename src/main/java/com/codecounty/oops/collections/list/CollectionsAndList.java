@@ -33,6 +33,7 @@ public class CollectionsAndList {
         listOfStudents.add(new Student("Jane",21));
         listOfStudents.add(new Student("Jack",22));
         listOfStudents.add(new Student("Jill",23));
+        System.out.println(listOfStudents);
 //        Collections.sort(listOfStudents);
 
     }
