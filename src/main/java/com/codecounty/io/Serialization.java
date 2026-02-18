@@ -8,7 +8,7 @@ public class Serialization {
     public static void main(String... args) {
 
 
-        Student st1 = new Student(23, "Sam");
+        Student st1 = new Student(21, "Sri");
         System.out.println(st1);
 
         File path = new File(FilePaths.SAMPLE_FILE_ABSOLUTE_PATH);
@@ -37,6 +37,7 @@ class Student implements Serializable {
     transient int age;
     String name;
 
+    private static final long serialversionID = 2L;//could remain same while serialization and deserialization
 
     public Student(int age, String name) {
         this.age = age;
