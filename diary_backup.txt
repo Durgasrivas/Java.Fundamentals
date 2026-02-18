@@ -1,0 +1,6 @@
+Entry 1: Today I started learning Java File I/O.
+Entry 2: It was a bit confusing, but I'm getting the hang of it.
+Entry 3: I successfully created and copied a file!
+Entry 1: Today I started learning Java File I/O.
+Entry 2: It was a bit confusing, but I'm getting the hang of it.
+Entry 3: I successfully created and copied a file!

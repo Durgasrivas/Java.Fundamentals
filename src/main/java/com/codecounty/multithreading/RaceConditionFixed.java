@@ -15,13 +15,21 @@ public class RaceConditionFixed {
 
 
     public static synchronized void incrementCounter() {
-        counterAtomic.incrementAndGet(); // Now thread-safe
+        counter++; // Now thread-safe
     }
 
     public static void main(String[] args) {
         // Create two threads
-        Thread thread1 = new Thread(() -> incrementCounterAtomic());
-        Thread thread2 = new Thread(() -> incrementCounterAtomic());
+        Thread thread1 = new Thread(() -> {
+            for (int i = 0; i < 10000; i++)
+                incrementCounterAtomic();
+        });
+
+        Thread thread2 = new Thread(() -> {
+            for (int i = 0; i < 10000; i++)
+                incrementCounterAtomic();
+        });
+
 
         // Start both threads
         thread1.start();
